@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: student-rooms
+    env: java
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    plan: free
